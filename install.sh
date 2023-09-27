@@ -11,3 +11,4 @@ wine msiexec /i python-2.7.14.msi
 sudo wine ~/.wine/drive_c/Python27/python.exe -m pip install pefile==2019.4.18
 sudo wine ~/.wine/drive_c/Python27/python.exe -m pip install pyinstaller==3.6 pynput==1.6.8
 sudo pip install pynput==1.6.8 pyinstaller==3.3.1
+sudo pip install rich==13.3.1 pyfiglet==0.8.post0
